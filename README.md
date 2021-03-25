@@ -2,8 +2,10 @@
 
 url = https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
 
-- Way 1
 
+- Way 1
+      
+      library("readr")
       url = "https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip"
       if (!dir.exists("./data")) { dir.create("./data") }
       if (!file.exists("./data/hourly_44201_2014.zip")) {
@@ -15,6 +17,7 @@ url = https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
 
 - Way 2
 
+      library("readr")
       url = "https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip"
       destfile = "D:/AirData.zip"
       download.file(url,destfile)
