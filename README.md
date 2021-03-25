@@ -1,6 +1,6 @@
-# How to access Air Data
+# How to access Air Data :dash: :woman_technologist: :man_technologist:
 
-url = https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
+https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
 
 
 - Way 1
@@ -24,7 +24,7 @@ url = https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
       unzip("D:/AirData.zip",exdir = "D:/")
       Data = read.csv("D:/8hour_44201_2014.csv")
       View(Data)
-
+      
 - Way 3
 
       library("readr")
@@ -32,3 +32,5 @@ url = https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
       con = unz("Air.zip", filename = "8hour_44201_2014.csv")
       con2 = gzcon(con)
       AirData = read_csv(con2)
+      
+ *Ways 1 and 2 can be applicapble whin using laptop or desktop, while way 3 can be coded using smartphones and tablets*
