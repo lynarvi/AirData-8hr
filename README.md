@@ -12,3 +12,20 @@ url = https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
       unzip("./data/hourly_44201_2014.zip", exdir = "./data")
       data = read.csv("./data/8hour_44201_2014.csv",header=TRUE)
       View(data)
+
+- Way 2
+
+      url = "https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip"
+      destfile = "D:/AirData.zip"
+      download.file(url,destfile)
+      unzip("D:/AirData.zip",exdir = "D:/")
+      Data = read.csv("D:/8hour_44201_2014.csv")
+      View(Data)
+
+- Way 3
+
+      library("readr")
+      download.file("https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip",destfile="Air.zip")
+      con = unz("Air.zip", filename = "8hour_44201_2014.csv")
+      con2 = gzcon(con)
+      AirData = read_csv(con2)
