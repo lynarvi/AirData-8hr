@@ -34,6 +34,3 @@ https://aqs.epa.gov/aqsweb/airdata/8hour_44201_2014.zip
       AirData = read_csv(con2)
       
  **Ways 1 and 2 are applicable when using laptop/desktop, while way 3 can be coded using smartphones/tablets*
- 
- # Exemption in Midterm Examnination (CHAROT :laughing:)
- # Perfect Midterm Exam (AHAHAHAHAHA)
